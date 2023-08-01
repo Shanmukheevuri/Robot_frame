@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230710 12:42:34.865" rpa="false" schemaversion="4">
+<suite id="s1" name="Robotframe" source="C:\Users\saish\Desktop\Robotframe">
+<suite id="s1-s1" name="TestCases" source="C:\Users\saish\Desktop\Robotframe\TestCases">
+<suite id="s1-s1-s1" name="TestCases" source="C:\Users\saish\Desktop\Robotframe\TestCases\TestCases.robot">
+<test id="s1-s1-s1-t1" name="runbrowser" line="7">
+<kw name="opening browser" library="Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${WebDriver}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230710 12:42:35.150" level="INFO">Opening browser 'gc' to base url 'https://www.google.com'.</msg>
+<msg timestamp="20230710 12:42:35.160" level="INFO">Executing: C:\Users\saish\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<status status="PASS" starttime="20230710 12:42:35.150" endtime="20230710 12:42:39.546"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230710 12:42:39.547" endtime="20230710 12:42:39.666"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Search}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230710 12:42:39.667" endtime="20230710 12:42:39.687"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Search}</arg>
+<arg>Dhoni</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230710 12:42:39.689" level="INFO">Typing text 'Dhoni' into text field 'xpath = //*[@id='APjFqb']'.</msg>
+<status status="PASS" starttime="20230710 12:42:39.688" endtime="20230710 12:42:39.806"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230710 12:42:44.809" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230710 12:42:39.807" endtime="20230710 12:42:44.809"/>
+</kw>
+<status status="PASS" starttime="20230710 12:42:35.149" endtime="20230710 12:42:44.809"/>
+</kw>
+<status status="PASS" starttime="20230710 12:42:35.148" endtime="20230710 12:42:44.810"/>
+</test>
+<status status="PASS" starttime="20230710 12:42:34.900" endtime="20230710 12:42:44.812"/>
+</suite>
+<status status="PASS" starttime="20230710 12:42:34.897" endtime="20230710 12:42:44.815"/>
+</suite>
+<status status="PASS" starttime="20230710 12:42:34.869" endtime="20230710 12:42:44.817"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robotframe">Robotframe</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TestCases">Robotframe.TestCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TestCases">Robotframe.TestCases.TestCases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
